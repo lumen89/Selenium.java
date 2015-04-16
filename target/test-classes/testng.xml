@@ -4,7 +4,7 @@
 	<test name="Test1">
 		<parameter name="path" value="/"/>
 		<classes>
-		    <class name="IKalinin.pages.HomePageTest"/>
+		    <class name="IKalinin.pages.LoginPageTest"/>
 		</classes>
 	</test>  
 </suite>

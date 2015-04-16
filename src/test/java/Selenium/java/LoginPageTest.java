@@ -16,7 +16,8 @@ public class LoginPageTest extends Selenium.java.pages.TestBase {
 
   @Test
   public void testUntitled() throws Exception {
-    driver.get(baseUrl + "/php4dvd/");
+	WebDriver driver = new FirefoxDriver();
+    driver.get("http://localhost:80/php4dvd/");
     driver.findElement(By.name("password")).clear();
     driver.findElement(By.name("password")).sendKeys("admin");
     driver.findElement(By.id("username")).clear();
@@ -26,6 +27,7 @@ public class LoginPageTest extends Selenium.java.pages.TestBase {
 
   private boolean isElementPresent(By by) {
     try {
+      WebDriver driver = new FirefoxDriver();
       driver.findElement(by);
       return true;
     } catch (NoSuchElementException e) {
@@ -35,6 +37,7 @@ public class LoginPageTest extends Selenium.java.pages.TestBase {
 
   private String closeAlertAndGetItsText() {
     try {
+     WebDriver driver = new FirefoxDriver();	
       Alert alert = driver.switchTo().alert();
       String alertText = alert.getText();
       if (acceptNextAlert) {
