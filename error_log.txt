@@ -1,0 +1,189 @@
+org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+25405	DeferredSave.extensions.json	DEBUG	Starting write
+1429212525412	addons.manager	DEBUG	shutdown
+1429212525413	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1429212525413	addons.xpi	DEBUG	shutdown
+1429212525413	addons.xpi-utils	DEBUG	shutdown
+1429212525413	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1429212525413	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1429212525414	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1429212525535	DeferredSave.extensions.json	DEBUG	Write succeeded
+1429212525535	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1429212525535	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1429212525537	addons.manager	DEBUG	Async provider shutdown done
+1429212525868	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: ["XPIProvider"]
+1429212525869	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: ["LightweightThemeManager"]
+1429212525871	addons.xpi	DEBUG	startup
+1429212525871	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\ILYA\AppData\Local\Temp\anonymous8299385811037241297webdriver-profile\extensions\fxdriver@googlecode.com
+1429212525872	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\ILYA\AppData\Local\Temp\anonymous8299385811037241297webdriver-profile\extensions\webdriver-staging
+1429212525872	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1429212525872	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1429212525872	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1429212525873	addons.xpi	DEBUG	checkForChanges
+1429212525873	addons.xpi	DEBUG	Loaded add-on state from prefs: {"app-profile":{"fxdriver@googlecode.com":{"d":"C:\\Users\\ILYA\\AppData\\Local\\Temp\\anonymous8299385811037241297webdriver-profile\\extensions\\fxdriver@googlecode.com","e":true,"v":"2.43.1","st":1429212524701,"mt":1429212524583}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"37.0.1","st":1429037746560,"mt":1428033983000}}}
+1429212525873	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
+1429212525877	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1429212525877	addons.xpi	DEBUG	getInstallState changed: false, state: {"app-profile":{"fxdriver@googlecode.com":{"d":"C:\\Users\\ILYA\\AppData\\Local\\Temp\\anonymous8299385811037241297webdriver-profile\\extensions\\fxdriver@googlecode.com","e":true,"v":"2.43.1","st":1429212524701,"mt":1429212524583}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"37.0.1","st":1429037746560,"mt":1428033983000}}}
+1429212525878	addons.xpi	DEBUG	No changes found
+1429212525880	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1429212525880	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1429212525881	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1429212525881	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+JavaScript error: file:///C:/Users/ILYA/AppData/Local/Temp/anonymous8299385811037241297webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js, line 11464: TypeError: this.server_ is undefined
+JavaScript error: chrome://fxdriver/content/server.js, line 38: NS_ERROR_XPC_CI_RETURNED_FAILURE: Component returned failure code: 0x80570015 (NS_ERROR_XPC_CI_RETURNED_FAILURE) [nsIJSCID.createInstance]
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+1429212526563	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at Selenium.java.pages.TestBase.<init>(TestBase.java:7)
+	at Selenium.java.LoginPageTest.<init>(LoginPageTest.java:13)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.testng.internal.ObjectFactoryImpl.newInstance(ObjectFactoryImpl.java:29)
+	at org.testng.internal.ClassHelper.createInstance1(ClassHelper.java:387)
+	at org.testng.internal.ClassHelper.createInstance(ClassHelper.java:299)
+	at org.testng.internal.ClassImpl.getDefaultInstance(ClassImpl.java:110)
+	at org.testng.internal.ClassImpl.getInstances(ClassImpl.java:186)
+	at org.testng.internal.TestNGClassFinder.<init>(TestNGClassFinder.java:120)
+	at org.testng.TestRunner.initMethods(TestRunner.java:409)
+	at org.testng.TestRunner.init(TestRunner.java:235)
+	at org.testng.TestRunner.init(TestRunner.java:205)
+	at org.testng.TestRunner.<init>(TestRunner.java:160)
+	at org.testng.remote.RemoteTestNG$1.newTestRunner(RemoteTestNG.java:141)
+	at org.testng.remote.RemoteTestNG$DelegatingTestRunnerFactory.newTestRunner(RemoteTestNG.java:271)
+	at org.testng.SuiteRunner$ProxyTestRunnerFactory.newTestRunner(SuiteRunner.java:561)
+	at org.testng.SuiteRunner.init(SuiteRunner.java:157)
+	at org.testng.SuiteRunner.<init>(SuiteRunner.java:111)
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1299)
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1286)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+org.testng.TestNGException: 
+Cannot instantiate class Selenium.java.LoginPageTest
+	at org.testng.internal.ObjectFactoryImpl.newInstance(ObjectFactoryImpl.java:38)
+	at org.testng.internal.ClassHelper.createInstance1(ClassHelper.java:387)
+	at org.testng.internal.ClassHelper.createInstance(ClassHelper.java:299)
+	at org.testng.internal.ClassImpl.getDefaultInstance(ClassImpl.java:110)
+	at org.testng.internal.ClassImpl.getInstances(ClassImpl.java:186)
+	at org.testng.internal.TestNGClassFinder.<init>(TestNGClassFinder.java:120)
+	at org.testng.TestRunner.initMethods(TestRunner.java:409)
+	at org.testng.TestRunner.init(TestRunner.java:235)
+	at org.testng.TestRunner.init(TestRunner.java:205)
+	at org.testng.TestRunner.<init>(TestRunner.java:160)
+	at org.testng.remote.RemoteTestNG$1.newTestRunner(RemoteTestNG.java:141)
+	at org.testng.remote.RemoteTestNG$DelegatingTestRunnerFactory.newTestRunner(RemoteTestNG.java:271)
+	at org.testng.SuiteRunner$ProxyTestRunnerFactory.newTestRunner(SuiteRunner.java:561)
+	at org.testng.SuiteRunner.init(SuiteRunner.java:157)
+	at org.testng.SuiteRunner.<init>(SuiteRunner.java:111)
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1299)
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1286)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.testng.internal.ObjectFactoryImpl.newInstance(ObjectFactoryImpl.java:29)
+	... 21 more
+Caused by: org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+25405	DeferredSave.extensions.json	DEBUG	Starting write
+1429212525412	addons.manager	DEBUG	shutdown
+1429212525413	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1429212525413	addons.xpi	DEBUG	shutdown
+1429212525413	addons.xpi-utils	DEBUG	shutdown
+1429212525413	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1429212525413	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1429212525414	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1429212525535	DeferredSave.extensions.json	DEBUG	Write succeeded
+1429212525535	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1429212525535	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1429212525537	addons.manager	DEBUG	Async provider shutdown done
+1429212525868	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: ["XPIProvider"]
+1429212525869	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: ["LightweightThemeManager"]
+1429212525871	addons.xpi	DEBUG	startup
+1429212525871	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\ILYA\AppData\Local\Temp\anonymous8299385811037241297webdriver-profile\extensions\fxdriver@googlecode.com
+1429212525872	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\ILYA\AppData\Local\Temp\anonymous8299385811037241297webdriver-profile\extensions\webdriver-staging
+1429212525872	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1429212525872	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1429212525872	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1429212525873	addons.xpi	DEBUG	checkForChanges
+1429212525873	addons.xpi	DEBUG	Loaded add-on state from prefs: {"app-profile":{"fxdriver@googlecode.com":{"d":"C:\\Users\\ILYA\\AppData\\Local\\Temp\\anonymous8299385811037241297webdriver-profile\\extensions\\fxdriver@googlecode.com","e":true,"v":"2.43.1","st":1429212524701,"mt":1429212524583}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"37.0.1","st":1429037746560,"mt":1428033983000}}}
+1429212525873	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
+1429212525877	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1429212525877	addons.xpi	DEBUG	getInstallState changed: false, state: {"app-profile":{"fxdriver@googlecode.com":{"d":"C:\\Users\\ILYA\\AppData\\Local\\Temp\\anonymous8299385811037241297webdriver-profile\\extensions\\fxdriver@googlecode.com","e":true,"v":"2.43.1","st":1429212524701,"mt":1429212524583}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"37.0.1","st":1429037746560,"mt":1428033983000}}}
+1429212525878	addons.xpi	DEBUG	No changes found
+1429212525880	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1429212525880	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1429212525881	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1429212525881	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+JavaScript error: file:///C:/Users/ILYA/AppData/Local/Temp/anonymous8299385811037241297webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js, line 11464: TypeError: this.server_ is undefined
+JavaScript error: chrome://fxdriver/content/server.js, line 38: NS_ERROR_XPC_CI_RETURNED_FAILURE: Component returned failure code: 0x80570015 (NS_ERROR_XPC_CI_RETURNED_FAILURE) [nsIJSCID.createInstance]
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+1429212526563	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'Lumen', ip: '192.168.1.3', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_31'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at Selenium.java.pages.TestBase.<init>(TestBase.java:7)
+	at Selenium.java.LoginPageTest.<init>(LoginPageTest.java:13)
+	... 26 more
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+25405	DeferredSave.extensions.json	DEBUG	Starting write
+1429212525412	addons.manager	DEBUG	shutdown
+1429212525413	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1429212525413	addons.xpi	DEBUG	shutdown
+1429212525413	addons.xpi-utils	DEBUG	shutdown
+1429212525413	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1429212525413	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1429212525414	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1429212525535	DeferredSave.extensions.json	DEBUG	Write succeeded
+1429212525535	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+1429212525535	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1429212525537	addons.manager	DEBUG	Async provider shutdown done
+1429212525868	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: ["XPIProvider"]
+1429212525869	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: ["LightweightThemeManager"]
+1429212525871	addons.xpi	DEBUG	startup
+1429212525871	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\ILYA\AppData\Local\Temp\anonymous8299385811037241297webdriver-profile\extensions\fxdriver@googlecode.com
+1429212525872	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\ILYA\AppData\Local\Temp\anonymous8299385811037241297webdriver-profile\extensions\webdriver-staging
+1429212525872	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1429212525872	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1429212525872	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1429212525873	addons.xpi	DEBUG	checkForChanges
+1429212525873	addons.xpi	DEBUG	Loaded add-on state from prefs: {"app-profile":{"fxdriver@googlecode.com":{"d":"C:\\Users\\ILYA\\AppData\\Local\\Temp\\anonymous8299385811037241297webdriver-profile\\extensions\\fxdriver@googlecode.com","e":true,"v":"2.43.1","st":1429212524701,"mt":1429212524583}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"37.0.1","st":1429037746560,"mt":1428033983000}}}
+1429212525873	addons.xpi	DEBUG	getModTime: Recursive scan of fxdriver@googlecode.com
+1429212525877	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1429212525877	addons.xpi	DEBUG	getInstallState changed: false, state: {"app-profile":{"fxdriver@googlecode.com":{"d":"C:\\Users\\ILYA\\AppData\\Local\\Temp\\anonymous8299385811037241297webdriver-profile\\extensions\\fxdriver@googlecode.com","e":true,"v":"2.43.1","st":1429212524701,"mt":1429212524583}},"app-global":{"{972ce4c6-7e08-4474-a285-3208198ce6fd}":{"d":"C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}","e":true,"v":"37.0.1","st":1429037746560,"mt":1428033983000}}}
+1429212525878	addons.xpi	DEBUG	No changes found
+1429212525880	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1429212525880	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1429212525881	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1429212525881	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+JavaScript error: file:///C:/Users/ILYA/AppData/Local/Temp/anonymous8299385811037241297webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js, line 11464: TypeError: this.server_ is undefined
+JavaScript error: chrome://fxdriver/content/server.js, line 38: NS_ERROR_XPC_CI_RETURNED_FAILURE: Component returned failure code: 0x80570015 (NS_ERROR_XPC_CI_RETURNED_FAILURE) [nsIJSCID.createInstance]
+*** Blocklist::_preloadBlocklistFile: blocklist is disabled
+1429212526563	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	... 34 more
